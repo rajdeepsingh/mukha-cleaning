@@ -137,12 +137,6 @@ h2 {
 
 /*Services Section*/
 
-.services {
-}
-
-.services .content {
-}
-
 .services .content.row {
 	margin-left: 0px !important;
 	margin-right: 0px !important;
@@ -171,13 +165,21 @@ h2 {
 	display: none;
 }
 
+/* Mobile and upto Tablet Styles */
 @media only screen and (max-width : 767px) {
     .services .service {
     	height: auto !important;
     	padding-bottom: 30px;
-    } 
+    }
 
-    .services .service h3, .services .service ul {
+	.projects .project {
+		margin-bottom: 20px;
+	}
+}
+
+/* Mobile Styles */
+@media only screen and (max-width : 548px) {
+    .services .service h2, .services .service ul {
     	text-align: left;
     }
 
@@ -187,47 +189,47 @@ h2 {
 	}
 }
 
+/* Desktop Styles */
 @media only screen and (min-width : 768px) {
 	section .content {
 		padding: 30px 30px !important;
 	}
 }
 
-@media only and (min-width : 576px) {
-	.services .service {
-		padding: 20px;
-	}
+/* tablet and up styles */
+@media only screen and (min-width : 548px) {
 }
 
 /* Projects Section */
 
 .projects .project {
-	background: url("../img/stock/186H.jpg");
-	height: 300px;
 	position: relative;
-	background-size: cover;
-	background-repeat: no-repeat;
+	padding: 0;
 }
 
 .projects .project h3 {
 	text-align: center;
     font-size: 2em;
-    margin: 0;
     position: absolute;
-    vertical-align: middle;
-    padding-top: 20px;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
     color: #FFF;
     background: rgba(0, 0, 0, 0.5);
     transition: 0.5s all;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 20px;
 }
 
 .projects .project h3:hover {
 	background: none;
 	padding-top: 50px;
+}
+
+.projects .project img {
+	height: 100%;
+	width: 100%;
 }
 
 /* Contacts Section */

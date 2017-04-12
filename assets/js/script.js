@@ -1,3 +1,1 @@
-$(function() {
-	$('.service').matchHeight();
-});
+// https://jsfiddle.net/Guruprasad_Rao/xya6gs93/1/
