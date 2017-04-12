@@ -5,11 +5,29 @@ body {
 	font-family: "Open Sans", sans-serif;
 	border-top: 2px solid #ee5757;
 	font-size: 16px;
-	color: #fff;
+	color: #101010;
 	font-weight: 300;
 }
 .main {
 	margin-top: 50px;
+}
+
+.row {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+section {
+	margin-bottom: 20px;
+	color: #101010;
+	background: #FFF;
+	-webkit-box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+section .content {
+	padding: 20px 20px;
 }
 
 #nav-right {
@@ -89,13 +107,13 @@ body {
 /*Mission Section*/
 
 .mission {
-	background: #252525;
+	background: #222;
 	padding: 30px 30px;
-	margin-top: 20px;
+	margin-top: 20px;color: #FFF;
 }
 
 .mission h1 {
-	color: #e6a83d;
+	color: #ee5757;
 	margin-top: 0px;
 	font-size: 2em;
 	font-family: "Josefin Sans", sans-serif;
@@ -104,28 +122,25 @@ body {
 
 
 h2 {
-	color: #e6a83d;
+	color: #ee5757;
 	margin-top: 0px;
 	font-size: 2em;
 	font-family: "Josefin Sans", sans-serif;
-	background: #252525;
 	padding: 10px 29px;
 	width: auto;
-	display: block;
+	display: inline-block;
 	margin-bottom: 0px;
+	margin: 0px;
+	background: #222;
 }
 
 
 /*Services Section*/
 
 .services {
-	margin-top: 20px;
-	color: #101010;
-	background: #D7D7D7;
 }
 
 .services .content {
-	padding: 20px 20px;
 }
 
 .services .content.row {
@@ -135,7 +150,6 @@ h2 {
 
 .services .service {
 	background: #fff;
-	padding: 20px;
 	text-align: center;
 }
 
@@ -160,9 +174,10 @@ h2 {
 @media only screen and (max-width : 767px) {
     .services .service {
     	height: auto !important;
+    	padding-bottom: 30px;
     } 
 
-    .services .service ul {
+    .services .service h3, .services .service ul {
     	text-align: left;
     }
 
@@ -170,4 +185,84 @@ h2 {
     	display: inline;
 		margin-right: 5px;
 	}
+}
+
+@media only screen and (min-width : 768px) {
+	section .content {
+		padding: 30px 30px !important;
+	}
+}
+
+@media only and (min-width : 576px) {
+	.services .service {
+		padding: 20px;
+	}
+}
+
+/* Projects Section */
+
+.projects .project {
+	background: url("../img/stock/186H.jpg");
+	height: 300px;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.projects .project h3 {
+	text-align: center;
+    font-size: 2em;
+    margin: 0;
+    position: absolute;
+    vertical-align: middle;
+    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s all;
+}
+
+.projects .project h3:hover {
+	background: none;
+	padding-top: 50px;
+}
+
+/* Contacts Section */
+
+.contact {
+}
+
+.contact .content {
+	font-size: 36px;
+	text-align: center;
+}
+
+.contact p {
+	margin: 0;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+/* Footer Section */
+footer {
+	margin-top: 20px;
+	border-top: 5px solid #EE5757;
+	padding: 50px 30px 10px;
+}
+
+footer p {
+	margin: 0;
+}
+
+footer .content {
+	text-align: center;
+}
+
+footer .content img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
 }
