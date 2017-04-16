@@ -18,6 +18,8 @@ $(function() {
 
 	persons.push(person);
 
+	console.log("This should be working now");
+
 	$.each(persons, function(i, person) {
 		console.log(person.name + ' and they would like a ' + person.drink);
 		console.log(person);
