@@ -214,6 +214,10 @@ h2 {
 	#hero-section h1 {
 		font-size: 5vw;
 	}
+
+	.contact .map {
+		margin-top: 40px;
+	}
 }
 
 /* Tablet Styles */
@@ -294,21 +298,27 @@ h2 {
 /* Contacts Section */
 
 .contact {
-}
-
-.contact .content {
-	font-size: 36px;
+	font-size: 24px;
 	text-align: center;
 }
 
-.contact p {
-	margin: 0;
-	margin-left: 20px;
-	display: inline-block;
+.contact .content {
+}
+
+.contact a {
+	color: #ee5757;
+	text-decoration: none;
+}
+
+.contact a:hover {
+	color: #000;
 }
 
 /* Footer Section */
 footer {
+	background: url('../img/whitediamond.png');
+	background-repeat: repeat;
+	background-position: center center;
 	margin-top: 20px;
 	border-top: 5px solid #EE5757;
 	padding: 50px 30px 10px;
