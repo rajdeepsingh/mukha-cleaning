@@ -6,11 +6,16 @@ $(document).ready(function(){
 
         var target = this.hash;
         $target = $(target);
+        $offset = $target.offset();
+        $offsetTop = $offset.top - 100;
 
         $('html, body').stop().animate({
-            'scrollTop':  $target.offset().top
+            'scrollTop':  $offsetTop
         }, 900, 'swing', function () {
             window.location.hash = target;
         });
     });
+
+    $('body').scrollspy({ target: '#nav-right' })
 });
+
